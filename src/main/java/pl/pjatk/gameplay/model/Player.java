@@ -1,19 +1,24 @@
 package pl.pjatk.gameplay.model;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Player {
     private String name;
     private int hp;
     private int id;
     private int attack;
 
-    public Player(String name, int hp, int id, int attack) {
+    public Player(int id, String name, int hp, int attack) {
         this.name = name;
         this.hp = hp;
         this.id = id;
+        this.attack = attack;
+    }
+
+    public Player() {
+    }
+
+    public Player(String name, int hp, int attack) {
+        this.name = name;
+        this.hp = hp;
         this.attack = attack;
     }
 
